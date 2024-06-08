@@ -273,13 +273,25 @@ p{
     border: 1px solid #000000;
 }
 
+.plan button:hover {
+    background-color: var(--greentheme);
+    color: black;
+}
+
 .plan.premium button {
     padding: 10px 20px;
     border: none;
     background-color: var(--greentheme);
-    color: #fff;
+    color: black;
     cursor: pointer;
     border-radius: 20px;
+    border: 1px solid #000000;
+}
+
+.plan.premium button:hover {
+
+    background-color: white;
+    color: black;
 }
 
 .marcaSection {
@@ -309,35 +321,74 @@ p{
 .contactText{
     width: 40%;
     color: #fff;
+    margin-top: 10%;
 }
+
+.contacc {
+    margin-left: 15%;
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 40%;
+    margin-left: 18%;
+    margin-top: 10%;
 }
 
-.contact form input,
 .contact form textarea {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #00d482;
     border-radius: 5px;
-    background-color: var(--bluetheme);
+    background-color: transparent; /* Fondo transparente */
     color: #fff;
 }
 
-label{
-    color: var(--greentheme);
+.contact form input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #00d482;
+    border-radius: 5px;
+    background-color: transparent; /* Fondo transparente */
+    color: #fff;
 }
+
+.margin {
+    margin-right: 6%;
+}
+
+label {
+    color: var(--greentheme);
+    display: block;
+    margin-bottom: 5px;
+}
+
 .contact form button {
     padding: 10px 20px;
     border: none;
     background-color: #00d482;
     color: var(--bluetheme);
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
+    width: 105%;
+    margin-left: 5%;
+}
+
+.namail {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.namail > div {
+    width: 48%;
+}
+
+.messag {
     width: 100%;
 }
 
@@ -371,24 +422,142 @@ footer .social-icons img {
 
 /*------------------- Responsive ----------------------------*/
 
-/* Estilos para smartphones más pequeños (352-480px) */
-@media only screen and (min-width: 352px) and (max-width: 480px) {
-    header{ 
-        height: 1002px ;
-        margin-top: 40px;
-          
+/* Estilos para laptops (769-920px) y abajo */
+
+@media only screen and (max-width: 1279px){
+    .bannerText {
+        padding: 10%;
     }
+
+    aside h1 {
+        margin-top: -137%;
+        margin-left: 50%;
+        font-size: 20px;
+    }
+
+    .logoLogo {
+        margin-left: 10%;
+    }
+
+    .title1{
+       font-size: 25px;
+       text-align: center;
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+
+    .section2{
+        text-align: center;
+    }
+
+    .section4 {
+        margin-top: 50%;
+    }
+
+    .pc, .tablet {
+        width: 95%;
+    }
+
+    .tablet {
+        margin-top: -60%;
+    }
+
+    .degrade {
+        background: linear-gradient(-125deg, white 28%, var(--greentheme) -18%);
+        margin-top: 30%;
+     }
+    .threeimages{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
     
-    .h2titulo{
-        font-size: 40x;
-        font-weight: bold;
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-    
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .h2titulo {
+        font-size: 35px;
+    }
+
+    .par1 {
+        font-size: 12px;
+    }
+
+    .par3 {
+        font-size: 24px;
+    }
+
+    .parra2,
+    .parra3 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .boton1,
+    .boton2,
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    .plan {
+        width: 90%;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contactText{
+        padding: 10%;
+        margin-top: -10%;
+    }
+
+    .contactText p{
+        font-size: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .namail{
+        display: block;
+        width: 120%;
+        margin-top: -30%;
+    }
+
+    .cienpor{
+        width: 500px;
+    }
+
+    .messag{
+        width: 105%;
+        margin-left: -70%;
+        margin-bottom: 10%;
+    }
+    .contact form input {
+        width: 180%;
+        margin-left: -50%;
+    }
+
+    .contact form button {
+        margin-left: -55%;
+    }
+    .move {
+        margin-top: -70%;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+        width: 90%;
     }
 }
-
-/* Estilos para laptops (769-920px) y abajo */
 @media only screen and (max-width: 920px) {
     .banner {
         flex-direction: column;
@@ -469,10 +638,63 @@ footer .social-icons img {
     }
 }
 
-/* Estilos para smartphones más pequeños (352-480px) */
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 768px){
+    .bannerText {
+        padding: 10%;
+    }
+
+    aside h1 {
+        margin-top: -137%;
+        margin-left: 50%;
+        font-size: 20px;
+    }
+
+    .logoLogo {
+        margin-left: 10%;
+    }
+
+    .title1{
+       font-size: 25px;
+       text-align: center;
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+
+    .section2{
+        text-align: center;
+    }
+
+    .section4 {
+        margin-top: 50%;
+    }
+
+    .pc, .tablet {
+        width: 95%;
+    }
+
+    .tablet {
+        margin-top: -60%;
+    }
+
+    .degrade {
+        background: linear-gradient(-125deg, white 28%, var(--greentheme) -18%);
+        margin-top: 30%;
+     }
+    .threeimages{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
     .h2titulo {
-        font-size: 24px;
+        font-size: 35px;
     }
 
     .par1 {
@@ -502,6 +724,189 @@ footer .social-icons img {
     .social-icons img {
         width: 24px;
         height: 24px;
+    }
+
+    .contactText{
+        padding: 10%;
+        margin-top: -10%;
+    }
+
+    .contactText p{
+        font-size: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .namail{
+        display: block;
+        width: 120%;
+        margin-top: -30%;
+    }
+
+    .cienpor{
+        width: 500px;
+    }
+
+    .messag{
+        width: 105%;
+        margin-left: -70%;
+        margin-bottom: 10%;
+    }
+    .contact form input {
+        width: 180%;
+        margin-left: -50%;
+    }
+
+    .contact form button {
+        margin-left: -55%;
+    }
+    .move {
+        margin-top: -70%;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+        width: 90%;
+    }
+}
+/* Estilos para smartphones más pequeños (352-480px) */
+@media only screen and (max-width: 480px) {
+
+    .bannerText {
+        padding: 10%;
+    }
+
+    aside h1 {
+        margin-top: -137%;
+        margin-left: 50%;
+        font-size: 20px;
+    }
+
+    .logoLogo {
+        margin-left: 10%;
+    }
+
+    .title1{
+       font-size: 25px;
+       text-align: center;
+       margin-left: 5%;
+       margin-right: 5%;
+    }
+
+    .section2{
+        text-align: center;
+    }
+
+    .section4 {
+        margin-top: 50%;
+    }
+
+    .pc, .tablet {
+        width: 95%;
+    }
+
+    .tablet {
+        margin-top: -60%;
+    }
+
+    .degrade {
+        background: linear-gradient(-125deg, white 28%, var(--greentheme) -18%);
+        margin-top: 30%;
+     }
+    .threeimages{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+
+    .h2titulo {
+        font-size: 35px;
+    }
+
+    .par1 {
+        font-size: 12px;
+    }
+
+    .par3 {
+        font-size: 24px;
+    }
+
+    .parra2,
+    .parra3 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .boton1,
+    .boton2,
+    button[type="submit"] {
+        width: 100%;
+    }
+
+    .plan {
+        width: 90%;
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contactText{
+        padding: 10%;
+        margin-top: -10%;
+    }
+
+    .contactText p{
+        font-size: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .namail{
+        display: block;
+        width: 120%;
+        margin-top: -30%;
+    }
+
+    .cienpor{
+        width: 500px;
+    }
+
+    .messag{
+        width: 105%;
+        margin-left: -70%;
+        margin-bottom: 10%;
+    }
+    .contact form input {
+        width: 180%;
+        margin-left: -50%;
+    }
+
+    .contact form button {
+        margin-left: -55%;
+    }
+    .move {
+        margin-top: -70%;
+    }
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer p {
+        text-align: center;
+        width: 90%;
     }
 }
 
